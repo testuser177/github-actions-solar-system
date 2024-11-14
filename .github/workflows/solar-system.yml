@@ -87,4 +87,4 @@
        with:
         method: kubeconfig
         kubeconfig: '${{ secrets.KUBECONFIG }}'
-     - run: kubectl version -o yaml --insecure-skip-tls-verify
+     - run: kubectl --server=https://6443-port-d296d5168afa4b6a.kk-lab-dev.kodekloud.com version -o yaml --insecure-skip-tls-verify
